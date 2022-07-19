@@ -63,19 +63,17 @@ banner
   padding: 16px 25px;
   color: #ffffff;
 }
-.live-icon{
-    
-}
-/* section blogs  */
-.nav-and-blog{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 24px;
 
+/* section blogs  */
+.nav-and-blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  width:1320px;
 }
 .blogs {
   display: grid;
-  grid-template-columns:repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 24px;
   row-gap: 24px;
 }
@@ -105,9 +103,9 @@ banner
   margin: 15px;
 }
 
-.navigation a:active{
-    color: white;
-    background: red;
+.navigation a:active {
+  color: white;
+  background: red;
 }
 
 #selected {
