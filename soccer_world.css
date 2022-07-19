@@ -65,8 +65,11 @@ banner
 }
 /* animation */
 .live {
-  padding-left: 25px;
-  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
   border-radius: 50%;
   background-color: rgb(245, 239, 239);
   animation: pulse 1500ms infinite;
