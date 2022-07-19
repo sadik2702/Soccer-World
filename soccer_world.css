@@ -63,13 +63,32 @@ banner
   padding: 16px 25px;
   color: #ffffff;
 }
-
+/* animation */
+.live {
+  padding-left: 25px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: rgb(245, 239, 239);
+  animation: pulse 1500ms infinite;
+  opacity: 0.9;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: rgba(255, 255, 255, 0.678) 0 0 0 0;
+  }
+  25% {
+    box-shadow: rgba(255, 255, 255, 0.577) 0 0 0 0;
+  }
+  75% {
+    box-shadow: #ffffff58 0 0 0 16px;
+  }
+}
 /* section blogs  */
 .nav-and-blog {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 24px;
-  width:1320px;
+  width: 1320px;
 }
 .blogs {
   display: grid;
