@@ -16,8 +16,7 @@ main {
   align-items: center;
 }
 .container {
-  margin-top: 50px;
-  margin-bottom: 80px;
+  margin: 50px 100px;
 }
 
 /*---------------------------
@@ -28,8 +27,8 @@ banner
   justify-content: space-between;
   background-color: black;
   border-radius: 30px;
-  height: 646px;
-  width: 1321px;
+  height: fit-content;
+  width: 100%;
 }
 .banner .banner-title {
   margin: 111px 0px 111px 106px;
@@ -88,10 +87,11 @@ banner
 }
 /* section blogs  */
 .nav-and-blog {
+  margin: 50px 0px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 24px;
-  width: 1320px;
+  width: 100%;
 }
 .blogs {
   display: grid;
@@ -130,10 +130,10 @@ banner
   background: red;
 }
 
-#selected {
+/* #selected {
   color: white;
   background: red;
-}
+} */
 .blog {
   box-shadow: 0px 10px 10px rgba(8, 0, 0, 0.126);
   width: 312px;
@@ -169,7 +169,7 @@ footer {
 }
 .footer-container {
   margin: 0;
-  padding: 130px 140px;
+  padding: 50px 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,7 +199,7 @@ footer {
   font-size: 16px;
   width: fit-content;
 }
-.footer-menu a:hover{
+.footer-menu a:hover {
   color: #939393;
 }
 .social-links a {
@@ -208,6 +208,59 @@ footer {
   font-size: 40px;
   margin: 50px 30px 0px 0px;
 }
-.social-links a:hover{
+.social-links a:hover {
   color: #939393;
+}
+
+/*------------------- 
+media queries 
+----------------------*/
+/* tablet view  */
+@media only screen and (min-width: 689px) and (max-width: 1023px) {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+  .container {
+    margin: 0px 100px;
+  }
+  .banner {
+    width: 100%;
+    height: auto;
+  }
+  /* navigation  */
+  .nav-and-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    justify-content: center;
+    height: fit-content;
+    width: max-content;
+  }
+
+  .navigation a {
+    margin: 35px 15px;
+    box-shadow: 0px 10px 10px rgba(8, 0, 0, 0.126);
+    width: 200px;
+    border: .5px solid rgba(170, 168, 168, 0.505);
+  }
+  .blog, .blog-img img{
+    width: 450px;
+  }
+}
+/* mobile view  */
+@media only screen and (max-width: 688px) {
+  body {
+    background-color: lightblue;
+  }
 }
