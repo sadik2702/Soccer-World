@@ -324,7 +324,7 @@ mobile view
     text-overflow: ellipsis;
     font-size: 14px;
   }
-  .banner .banner-title a{
+  .banner .banner-title a {
     display: block;
     font-size: 20px;
     padding: 8px 12px;
@@ -378,7 +378,7 @@ mobile view
     font-size: 16px;
   }
 
-   /* ------------------------
+  /* ------------------------
    footer 
    ---------------------------- */
   .footer-container {
@@ -388,7 +388,7 @@ mobile view
     flex-direction: column;
     align-items: center;
   }
-  
+
   .footer-container h2 {
     color: white;
     font-size: 22px;
@@ -426,5 +426,4 @@ mobile view
   .social-links a:hover {
     color: #939393;
   }
- 
 }
