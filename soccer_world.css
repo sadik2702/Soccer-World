@@ -32,7 +32,7 @@ banner
   height: 86.8632707774799vh;
 }
 .banner .banner-title {
-  margin: 5% 0px 2% 5%;
+  margin: 14.87vh 0 14.87vh 7.22vw;
 }
 .banner .banner-photo img {
   width: 44.825520833333336vw;
@@ -43,7 +43,6 @@ banner
 .banner .banner-title h1 {
   color: white;
   font-size: 4vw;
-  line-height: 80px;
   margin: 0px;
 }
 
@@ -58,7 +57,6 @@ banner
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.3vw;
-  line-height: 23px;
   text-align: center;
   padding: 16px 25px;
   color: #ffffff;
@@ -67,10 +65,10 @@ banner
 .live {
   display: inline-block;
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 1.3vw;
+  height: 2.68vh;
   margin-left: 15px;
-  border-radius: 50%;
+  border-radius: 25%;
   background-color: rgb(245, 239, 239);
   animation: pulse 1500ms infinite;
   opacity: 0.9;
@@ -106,28 +104,25 @@ banner
   --------------------------------------------*/
 .navigation {
   display: grid;
-  grid-template-columns: 254px;
-  row-gap: 15px;
+  grid-template-columns: 16.53vw;
+  row-gap: 0.97vw;
   justify-content: center;
   align-items: center;
   background-color: black;
-  font-size: 20px;
-  border-radius: 10px;
-  width: 312px;
-  height: 312px;
+  border-radius: 0.651vw;
+  width: 20.3125vw;
+  height: 41.8230563002681vh;
 }
 .navigation a {
   font-weight: 500;
   display: inline-block;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 0.65vw;
   text-decoration: none;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 1.3vw;
   text-align: center;
-  padding: 16px 25px;
+  padding: 2.144vh 1.62vw;
   color: black;
-  margin: 15px;
 }
 
 .navigation a:active {
@@ -143,53 +138,54 @@ banner
   color: white;
   background: red;
 } */
-.blog {
+.blog,
+.blog-img img {
   box-shadow: 10px 10px 10px rgba(8, 0, 0, 0.126);
-  width: 312px;
+  width: 20.3125vw;
 }
 .blog:hover {
   box-shadow: 5px 5px 10px rgba(8, 0, 0, 0.767);
 }
 .blog button {
-  font-size: 16px;
-  width: 130px;
-  height: 32px;
+  font-size: 1.041vw;
+  width: 8.463vw;
+  height: 4.28vh;
   color: black;
-  padding: 4px 17px;
+  padding: 0.53vh 1.106vw;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 0.67vh;
 }
 .blog button:focus {
   background-color: black;
   color: white;
-  border-radius: 5px;
+  border-radius: 0.65vh;
 }
 
 .blog .blog-title {
-  padding: 20px 20px;
+  padding: 2.68vh 1.3vw;
 }
 .blog-detail {
   display: flex;
 }
 .blog-detail .comment {
-  padding-left: 30px;
+  padding-left: 1.95vw;
 }
 
 /* hidden button  */
 .view-all {
-  width: 200px;
+  width: 13vw;
   background-color: rgb(206, 5, 5);
-  border-radius: 10px;
+  border-radius: 1.34vh;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 6.7vh;
   display: none;
 }
 .view-all a {
   display: block;
   text-decoration: none;
   color: white;
-  padding: 20px 20px;
-  font-size: 25px;
+  padding: 2.68vh 1.3vw;
+  font-size: 1.62vw;
   font-weight: 600;
 }
 
@@ -202,35 +198,35 @@ footer {
 }
 .footer-container {
   margin: 0;
-  padding: 50px 140px;
+  padding: 6.7vh 9.11vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .footer-container h2 {
   color: white;
-  font-size: 40px;
+  font-size: 2.6vw;
   margin: 0;
   /* text-align: center; */
 }
 .footer-container hr {
   color: #939393;
   background-color: #939393;
-  margin: 50px 0px;
+  margin: 6.7vh;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 3.35vh;
 }
 .footer-menu {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  column-gap: 15px;
+  column-gap: 2.01vh;
   justify-items: center;
   width: fit-content;
 }
 .footer-menu a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.041vw;
   width: fit-content;
 }
 .footer-menu a:hover {
@@ -239,8 +235,8 @@ footer {
 .social-links a {
   display: inline-block;
   color: white;
-  font-size: 40px;
-  margin: 50px 30px 0px 0px;
+  font-size: 2.6vw;
+  margin: 6.7vh 1.95vw 0 0;
 }
 .social-links a:hover {
   color: #939393;
@@ -251,9 +247,6 @@ media queries
 ----------------------*/
 /* tablet view  */
 @media only screen and (min-width: 689px) and (max-width: 1023px) {
-  /* .container {
-    margin: 50px 50px 0px 50px;
-  } */
   .banner {
     width: 100%;
     height: auto;
@@ -267,8 +260,8 @@ media queries
   .blogs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 24px;
-    row-gap: 24px;
+    column-gap: 3.21vh;
+    row-gap: 1.56vw;
   }
   .navigation {
     display: flex;
@@ -280,7 +273,7 @@ media queries
   }
 
   .navigation a {
-    /* margin: 30px 15px; */
+    margin: 4.02vh 0.97vw;
     box-shadow: 0px 10px 10px rgba(8, 0, 0, 0.126);
     width: 20vw;
     border: 0.5px solid rgba(170, 168, 168, 0.505);
