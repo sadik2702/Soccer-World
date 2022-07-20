@@ -37,28 +37,28 @@ banner
 .banner .banner-photo img {
   width: 44.825520833333336vw;
   height: 82.171581769437vh;
-  margin: 33px 10px 0px 0px;
-  padding: 0px 0px;
+  margin: 4.42vh 0.65vw 0 0;
+  padding: 0 0;
 }
 .banner .banner-title h1 {
   color: white;
   font-size: 4vw;
-  margin: 0px;
+  margin: 0;
 }
 
 .banner .banner-title p {
   color: white;
   font-size: 1vw;
-  margin-bottom: 30px;
+  margin-bottom: 4.02vh;
 }
 .banner .banner-title a {
   display: inline-block;
   background: rgb(206, 5, 5);
-  border-radius: 5px;
+  border-radius: 0.67vh;
   text-decoration: none;
   font-size: 1.3vw;
   text-align: center;
-  padding: 16px 25px;
+  padding: 2.14vh 1.62vw;
   color: #ffffff;
 }
 /* animation */
@@ -67,7 +67,7 @@ banner
   position: relative;
   width: 1.3vw;
   height: 2.68vh;
-  margin-left: 15px;
+  margin-left: 0.97vw;
   border-radius: 25%;
   background-color: rgb(245, 239, 239);
   animation: pulse 1500ms infinite;
@@ -81,22 +81,22 @@ banner
     box-shadow: rgba(255, 255, 255, 0.577) 0 0 0 0;
   }
   75% {
-    box-shadow: #ffffff58 0 0 0 16px;
+    box-shadow: #ffffff58 0 0 0 2.14vh;
   }
 }
 /* section blogs  */
 .nav-and-blog {
-  margin: 50px 0px;
+  margin: 6.7vh 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 24px;
+  column-gap: 3.21vh;
   width: 100%;
 }
 .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 24px;
-  row-gap: 24px;
+  column-gap: 3.27vh;
+  row-gap: 1.56vw;
 }
 
 /*-----------------------------------------
@@ -194,7 +194,6 @@ footer
 --------------------------------------------------*/
 footer {
   background-color: black;
-  /* height: 444px; */
 }
 .footer-container {
   margin: 0;
@@ -278,9 +277,12 @@ media queries
     width: 20vw;
     border: 0.5px solid rgba(170, 168, 168, 0.505);
   }
+  .blogs {
+    max-width: 100%;
+  }
   .blog,
   .blog-img img {
-    width: 45vw;
+    width: 40vw;
   }
   .view-all {
     display: grid;
@@ -288,7 +290,46 @@ media queries
 }
 /* mobile view  */
 @media only screen and (max-width: 688px) {
-  body {
-    background-color: lightblue;
+  .container {
+    margin: 0;
+  }
+  banner {
+    width: 100%;
+    height: auto;
+  }
+  /* navigation  */
+  .nav-and-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    justify-content: center;
+    height: fit-content;
+    width: 80vw;
+  }
+
+  .navigation a {
+    margin: 4.02vh 0.97vw;
+    box-shadow: 0px 10px 10px rgba(8, 0, 0, 0.126);
+    width: 20vw;
+    border: 0.5px solid rgba(170, 168, 168, 0.505);
+  }
+  .blogs {
+    max-width: 100%;
+  }
+  .blog,
+  .blog-img img {
+    width: 40vw;
+  }
+  .view-all {
+    display: grid;
   }
 }
